@@ -15,6 +15,10 @@ body{
     top : 50px;
 }
 
+.main-container-header{
+    padding : 15px 15px 70px;
+}
+
 .main-container-header h1{
     color :rgb(80, 80, 80);
     position: relative;
@@ -28,4 +32,32 @@ body{
     background-color : #2f89fc;
     left : calc(50% - 10%);
     bottom : 0;
+}
+
+.main-container-body{
+    background-color : snow;
+    padding : 35px 15px 10px;
+    display : flex;
+    flex-direction: column;
+    border-radius: 5px;
+    box-shadow: 2px 3px 10px 1px rgb(238, 238, 238);
+}
+
+.main-container-body button{
+    align-self: center;
+    padding : 5px;
+    color : white;
+    background-color : #2f89fc;
+    outline : none;
+    border : none;
+    font-size : 1.2rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all ease 0.8s;
+    border-radius: 5px;
+}
+
+.main-container-body button:hover{
+    background-color : transparent;
+    color : #2f89fc;
 }
