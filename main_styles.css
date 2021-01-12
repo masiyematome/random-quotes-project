@@ -22,6 +22,7 @@ body{
 .main-container-header h1{
     color :rgb(80, 80, 80);
     position: relative;
+    text-align : center;
 }
 
 .main-container-header h1::after{
@@ -30,17 +31,20 @@ body{
     width : 20%;
     position :absolute;
     background-color : #2f89fc;
-    left : calc(50% - 10%);
+    left : 50%;
+    transform: translateX(-50%);
     bottom : 0;
 }
 
 .main-container-body{
-    background-color : snow;
-    padding : 35px 15px 10px;
     display : flex;
     flex-direction: column;
+    justify-content: space-evenly;
+    background-color : snow;
+    padding : 0px 15px 10px;
     border-radius: 5px;
     box-shadow: 2px 3px 10px 1px rgb(238, 238, 238);
+    height : 300px;
 }
 
 .main-container-body button{
@@ -60,4 +64,28 @@ body{
 .main-container-body button:hover{
     background-color : transparent;
     color : #2f89fc;
+}
+
+.quote-content{
+    position: relative;
+}
+
+.quote-content i{
+    font-size : 1.2rem;
+    color : #fff371;
+}
+
+.quote-content i:nth-of-type(2){
+    transform: rotateY(180deg);
+}
+
+.quote-text{
+    font-size : 1.5rem;
+    display: inline;
+}
+
+.author-text {
+    position : absolute;
+    right : 0;
+    padding : 15px 50px;
 }
