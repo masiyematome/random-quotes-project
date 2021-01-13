@@ -12,11 +12,12 @@ generateQuoteButton.addEventListener("click",displayQuote);
 
 function generateRandomQuote(quotes){
     const randomIndex = Math.floor(Math.random() * 10);
-    console.log(quotes[randomIndex]);
+    quoteText.innerText = quotes[randomIndex].quote;
+    authorText.innerText = quotes[randomIndex].author;
 }
 
 function displayQuote(theQuotes){
-    const theQuotes = [
+     theQuotes = [
         {
             quote: "The Pessimist Sees Difficulty In Every Opportunity. The Optimist Sees Opportunity In Every Difficulty.",
             author : "Winston Churchill",
@@ -68,5 +69,8 @@ function displayQuote(theQuotes){
         },
 
     ];
+    
+    generateRandomQuote(theQuotes);
+
 }
 
